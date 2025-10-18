@@ -16,6 +16,11 @@ const router = createBrowserRouter([
         path: "/category/:id",
         element: <CategoryNews />,
         loader: () => fetch("/news.json"),
+        hydrateFallbackElement: (
+          <div className="flex items-center justify-center h-[30vh]">
+            <span className="loading loading-infinity loading-xl"></span>
+          </div>
+        ),
       },
     ],
   },
