@@ -15,7 +15,7 @@ const Categories = () => {
             key={category.id}
             to={`/category/${category.id}`}
             className={
-              "btn bg-base-100 font-semibold text-accent border-0 shadow-none hover:bg-base-200 hover:text-primary"
+              "btn bg-base-100 font-semibold text-accent flex justify-start border-0 shadow-none hover:bg-base-200 hover:text-primary"
             }
           >
             {category.name}
